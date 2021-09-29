@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    font-family: "Jost";
+    letter-spacing: 1.2px;
+    background-color: #002A2A;
+    color: white;
+
+}
+.ParentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.childDiv {
+    background-color: #a68c52;
+    box-shadow: 1px 1px 20px 5px white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+.maintTitle {
+    font-size: 40px;
+    text-decoration: 3px underline white;
+    text-underline-offset: 2px;
+
+
+}
+.userListTitle {
+    font-weight: 400;
+}
+
+.userDiv {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+.userDiv table {
+    text-align: left;
+    color: black;
+}
+table td {
+    padding: 10px;
+    border-radius: 2px;
+}
+table tr {
+    margin: 5px;
+    border-bottom: 1px solid black !important;
+}
+.DivFooter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.DivFooterChild {
+    background-color: #a68c52;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    transition: 0.5s ease-in-out;
+}
+.DivFooterChild:hover {
+    background-color: #002A2A;
+    box-shadow: 1px 1px 20px 5px white;
+    transform: scale(1.5);
+    border: 1px solid white;
+    z-index: 9999;
+}
+
+.imageKristian {
+    width: 130px;
+    height: 130px;
+    box-shadow: 1px 1px 20px 5px white;
+    position: absolute;
+    border: 1px solid black;
+    left: 100px;
+    border-radius: 200px;
+    object-fit: cover;
+    animation: MoveUpDown 4s linear infinite;
+    transition: 1s ease;
+
+}
+
+.imageAli {
+    width: 160px;
+    height: 160px;
+    box-shadow: 1px 1px 20px 5px white;
+    position: absolute;
+    border: 1px solid black;
+    left: 100px;
+    top: 100px;
+    border-radius: 200px;
+    object-fit: cover;
+    animation: MoveUpDown 5s linear infinite;
+    transition: 1s ease;
+
+}
+
+.imageKevin {
+    width: 145px;
+    height: 145px;
+    box-shadow: 1px 1px 20px 5px white;
+    position: absolute;
+    border: 1px solid black;
+    right: 100px;
+    border-radius: 200px;
+    object-fit: cover;
+    animation: MoveUpDown 3s linear infinite;
+    transition: 1s ease;
+
+}
+.imageSuayb {
+    width: 135px;
+    height: 135px;
+    box-shadow: 1px 1px 20px 5px white;
+    position: absolute;
+    border: 1px solid black;
+    right: 100px;
+    top: 100px;
+    border-radius: 200px;
+    object-fit: cover;
+    animation: MoveUpDown 6s linear infinite;
+    transition: 1s ease;
+}
+
+.imageSuayb:hover , .imageKristian:hover  , .imageKevin:hover , .imageAli:hover {
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 20px 5px #a68c52;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+.tooltip1 .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a68c52;
+    color: #ffffff;
+    box-shadow: 1px 1px 20px 5px white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    left: 30px;
+    z-index: 1;
+    animation: MoveUpDown 4s linear infinite;
+    transition: 1s ease;
+
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a68c52;
+    color: #ffffff;
+    box-shadow: 1px 1px 20px 5px white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    z-index: 1;
+    animation: MoveUpDown 5s linear infinite;
+    transition: 1s ease;
+
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a68c52;
+    color: #ffffff;
+    box-shadow: 1px 1px 20px 5px white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    top:120px;
+    z-index: 1;
+    animation: MoveUpDown 6s linear infinite;
+    transition: 1s ease;
+
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip4 .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a68c52;
+    color: #ffffff;
+    box-shadow: 1px 1px 20px 5px white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+    animation: MoveUpDown 3s linear infinite;
+    transition: 1s ease;
+
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip4:hover .tooltiptext4 {
+    visibility: visible;
+    opacity: 1;
+}
